@@ -2,9 +2,9 @@
 <?php header ( "Content-Type: text/html; charset=ISO-8859-1", true ); ?>
 
 <h1 align="center">Registros: </h1>
+
 <a href="editar.php?id= <?php echo $funcionario['id']; ?>"> <span class="glyphicon glyphicon-pencil"></span> Editar </a> -
 <a href="remover.php?id= <?php echo $funcionario['id']; ?>"> <span class="glyphicon glyphicon-remove"></span> Excluir </a>
-
 
 <br> <br>
 
@@ -56,11 +56,11 @@
 
   echo "--------------------------------------------<br>";
 
-  echo "ID: $id<br>";
-  echo "Nome: $nome<br>";
-  echo "Contacto: $contacto<br>";
-  echo "Email: $email<br>";
-  echo "NIF: $nif<br>";
+  echo "<b> ID:</b> $id<br>";
+  echo "<b> Nome:</b> $nome<br>";
+  echo "<b> Contacto:</b> $contacto<br>";
+  echo "<b> Email:</b> $email<br>";
+  echo "<b> NIF:</b> $nif<br>";
   
   echo "--------------------------------------------<br>";
 
