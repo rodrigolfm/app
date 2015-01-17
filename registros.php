@@ -2,12 +2,8 @@
 <?php header ( "Content-Type: text/html; charset=ISO-8859-1", true ); ?>
 
 <h1 align="center">Registros: </h1>
-
-<a href="editar.php?id= <?php echo $funcionario['id']; ?>"> <span class="glyphicon glyphicon-pencil"></span> Editar </a> -
-<a href="remover.php?id= <?php echo $funcionario['id']; ?>"> <span class="glyphicon glyphicon-remove"></span> Excluir </a>
-
+<div class="col-lg-4">
 <br> <br>
-
 
   <?php
   $conn = mysql_connect("localhost","root","");
@@ -79,4 +75,6 @@
   }
   ?>
 <hr>
+<a href="editar.php?id= <?php echo $id; ?>"> <span class="glyphicon glyphicon-pencil"></span> Editar </a> -
+<a href="remover.php?id= <?php echo $id; ?>"> <span class="glyphicon glyphicon-remove"></span> Excluir </a>
 </div>
